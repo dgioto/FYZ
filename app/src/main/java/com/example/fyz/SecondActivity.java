@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class SecondActivity extends AppCompatActivity {
@@ -16,30 +15,38 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        //добавление спискового представления с помощью адаптера массивов
-        ArrayAdapter<Thing> listAdapter = new ArrayAdapter<>(
-                this,
-                android.R.layout.simple_list_item_1,
-                Thing.drinks
-        );
-        ListView listDrinks = (ListView) findViewById(R.id.list_drinks);
-        listDrinks.setAdapter(listAdapter);
-
-        //создание слушателя
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
             @Override
-            //вызываем при щелчке на варианте в списковом представлении
-            public void onItemClick(AdapterView<?> listDrinks,
-                                    View itemView, int position, long id) {
-                //Передача напитка, вызванного пользователем, DrinkActivity
-                Intent intent = new Intent(SecondActivity.this,
-                        ThirdActivity.class);
-                intent.putExtra(ThirdActivity.EXTRA_DRINKID, (int) id);
-                startActivity(intent);
+            public void onItemClick(AdapterView<?> listView, View itemView, int position, long id) {
+                if (position == 0){
+                    Intent intent = new Intent(
+                            SecondActivity.this,
+                            ThirdActivity.class);
+                    startActivity(intent);
+                }
+                else if (position == 1){
+
+                }
+                else if (position == 2){
+
+                }
+                else if (position == 3){
+
+                }
+                else if (position == 4){
+
+                }
+                else if (position == 5){
+
+                }
+                else if (position == 6){
+
+                }
             }
         };
 
-        //Назначение слушателя для спискового представления
-        listDrinks.setOnItemClickListener(itemClickListener);
+        //Добавление слушателя к списковому представлению
+        ListView listView = (ListView) findViewById(R.id.list_categories);
+        listView.setOnItemClickListener(itemClickListener);
     }
 }

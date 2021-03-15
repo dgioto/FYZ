@@ -1,11 +1,22 @@
 <resources>
     <string name="app_name">FYZ</string>
     <string name="logo">Forever Your Zealot</string>
+
     <string-array name="options">
         <item>Категории</item>
         <item>Акции</item>
         <item>Доставка и оплата</item>
         <item>Контакты</item>
         <item>О нас</item>
+    </string-array>
+
+    <string-array name="categories">
+        <item>Бытовая химия</item>
+        <item>Кухонные принадлежности</item>
+        <item>Посуда</item>
+        <item>Товары для детей</item>
+        <item>Товары для дома</item>
+        <item>Хозяйственный инвентарь</item>
+        <item>Хранение и организация простарнства</item>
     </string-array>
 </resources>

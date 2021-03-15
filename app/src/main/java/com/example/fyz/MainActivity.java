@@ -31,6 +31,12 @@ public class MainActivity extends AppCompatActivity {
                 else if (position == 2){
 
                 }
+                else if (position == 3){
+
+                }
+                else if (position == 4){
+
+                }
             }
         };
 
