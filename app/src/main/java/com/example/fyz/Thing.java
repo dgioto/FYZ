@@ -6,12 +6,12 @@ public class Thing {
     private int imageResourceId;
 
     // drinks is an array of Drinks
-    public static final Drink[] drinks = {
-            new Drink("Latte", "A copule of espresso shot with steamed milk",
+    public static final Thing[] drinks = {
+            new Thing("Latte", "A copule of espresso shot with steamed milk",
                     R.drawable.latte),
-            new Drink("Cappuccino", "Esprecco, hot milk, and a steamed milk foam",
+            new Thing("Cappuccino", "Esprecco, hot milk, and a steamed milk foam",
                     R.drawable.cappuccino),
-            new Drink("Filter", "Hight quality beans roasted and brewed fresh",
+            new Thing("Filter", "Hight quality beans roasted and brewed fresh",
                     R.drawable.filter)
     };
 

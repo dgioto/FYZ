@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">FYZ</string>
+    <string name="logo">Forever Your Zealot</string>
+    <string-array name="options">
+        <item>Drinks</item>
+        <item>Food</item>
+        <item>Stores</item>
+    </string-array>
 </resources>

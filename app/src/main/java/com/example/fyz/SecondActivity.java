@@ -17,10 +17,10 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         //добавление спискового представления с помощью адаптера массивов
-        ArrayAdapter<Drink> listAdapter = new ArrayAdapter<>(
+        ArrayAdapter<Thing> listAdapter = new ArrayAdapter<>(
                 this,
                 android.R.layout.simple_list_item_1,
-                Drink.drinks
+                Thing.drinks
         );
         ListView listDrinks = (ListView) findViewById(R.id.list_drinks);
         listDrinks.setAdapter(listAdapter);
@@ -32,9 +32,9 @@ public class SecondActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> listDrinks,
                                     View itemView, int position, long id) {
                 //Передача напитка, вызванного пользователем, DrinkActivity
-                Intent intent = new Intent(DrinkCategoryActivity.this,
-                        DrinkActivity.class);
-                intent.putExtra(DrinkActivity.EXTRA_DRINKID, (int) id);
+                Intent intent = new Intent(SecondActivity.this,
+                        ThirdActivity.class);
+                intent.putExtra(ThirdActivity.EXTRA_DRINKID, (int) id);
                 startActivity(intent);
             }
         };

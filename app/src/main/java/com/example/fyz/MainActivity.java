@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> listView, View itemView, int position, long id) {
                 if (position == 0){
                     Intent intent = new Intent(
-                            TopLevelActivity.this,
-                            DrinkCategoryActivity.class);
+                            MainActivity.this,
+                            SecondActivity.class);
                     startActivity(intent);
                 }
                 else if (position == 1){

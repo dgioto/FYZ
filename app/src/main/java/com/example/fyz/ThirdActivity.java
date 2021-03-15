@@ -17,7 +17,7 @@ public class ThirdActivity extends AppCompatActivity {
 
         //получить напиток из данный интента
         int drinkId = (Integer) getIntent().getExtras().get(EXTRA_DRINKID);
-        Drink drink = Drink.drinks[drinkId];
+        Thing drink = Thing.drinks[drinkId];
 
         //Заполнение названия напитка
         TextView name = (TextView) findViewById(R.id.name);
