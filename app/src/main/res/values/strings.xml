@@ -3,6 +3,10 @@
     <string name="logo">Forever Your Zealot</string>
 
     <!-- button on a main activity-->
+    <string name="tel">Тел. +38(050) 811-63-93</string>
+    <string name="payment">На сайте возможна электронная оплата:
+        \nПриват24, LiqPay, VISA / MasterCard, QR код
+    </string>
     <string name="button">Категории</string>
     <string name="button2">Акции</string>
     <string name="button3">Доставка и оплата</string>

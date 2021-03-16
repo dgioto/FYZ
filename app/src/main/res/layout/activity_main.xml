@@ -6,70 +6,104 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:contentDescription="@string/logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_2" />
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/button"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onClickCategories"
-            android:padding="16dp"
-            android:text="@string/button"
-            app:backgroundTint="@color/purple_200" />
+            android:orientation="vertical"
+            android:padding="32dp">
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onClickPromotions"
-            android:padding="16dp"
-            android:text="@string/button2"
-            app:backgroundTint="@color/purple_500" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/logo"
+                android:paddingBottom="16dp"
+                app:srcCompat="@drawable/logo_2" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onClickShippingPayment"
-            android:padding="16dp"
-            android:text="@string/button3"
-            app:backgroundTint="@color/purple_500" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/tel"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onClickContacts"
-            android:padding="16dp"
-            android:text="@string/button4"
-            app:backgroundTint="@color/purple_500" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="16dp"
+                android:text="@string/payment" />
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onClickAboutUs"
-            android:text="@string/button5"
-            app:backgroundTint="@color/purple_500" />
-    </LinearLayout>
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickCategories"
+                android:padding="16dp"
+                android:text="@string/button"
+                app:backgroundTint="@color/purple_200" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickPromotions"
+                android:padding="16dp"
+                android:text="@string/button2"
+                app:backgroundTint="@color/purple_500" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickShippingPayment"
+                android:padding="16dp"
+                android:text="@string/button3"
+                app:backgroundTint="@color/purple_500" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickContacts"
+                android:padding="16dp"
+                android:text="@string/button4"
+                app:backgroundTint="@color/purple_500" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickAboutUs"
+                android:text="@string/button5"
+                app:backgroundTint="@color/purple_500" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/purple_500"
+        android:contentDescription="web"
+        android:onClick="onClickWeb"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/web" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
