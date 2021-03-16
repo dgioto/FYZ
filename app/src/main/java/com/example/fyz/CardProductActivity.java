@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -37,11 +38,10 @@ public class CardProductActivity extends AppCompatActivity {
         photo.setContentDescription(chem.getName());
     }
 
-    public  void onClickCall(){
-        Intent intent = new Intent(Intent.ACTION_DIAL);
-        intent.setData(Uri.parse("tel:0508116393"));
+    public  void onClickCall(View view){
+        String phone = "050 811 63 93";
+        Intent intent = new Intent(Intent.ACTION_DIAL,
+                Uri.fromParts("tel", phone, null));
         startActivity(intent);
     }
-
-
 }
