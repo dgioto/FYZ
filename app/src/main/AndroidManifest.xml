@@ -10,10 +10,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FYZ">
-        <activity android:name=".CardProductActivity"></activity>
+        <activity android:name=".Contacts"></activity>
+        <activity android:name=".ShippingPayment" />
+        <activity android:name=".Promotions" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".CardProductActivity" />
         <activity android:name=".ChemistryActivity" />
         <activity android:name=".CategoriesActivity" />
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

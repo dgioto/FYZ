@@ -43,7 +43,7 @@
             android:onClick="onClickPromotions"
             android:padding="16dp"
             android:text="@string/button2"
-            app:backgroundTint="@color/purple_700" />
+            app:backgroundTint="@color/purple_500" />
 
         <Button
             android:id="@+id/button3"
@@ -52,16 +52,16 @@
             android:onClick="onClickShippingPayment"
             android:padding="16dp"
             android:text="@string/button3"
-            app:backgroundTint="@color/purple_700" />
+            app:backgroundTint="@color/purple_500" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onClickСontacts"
+            android:onClick="onClickContacts"
             android:padding="16dp"
             android:text="@string/button4"
-            app:backgroundTint="@color/purple_700" />
+            app:backgroundTint="@color/purple_500" />
 
         <Button
             android:id="@+id/button5"
@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:onClick="onClickAboutUs"
             android:text="@string/button5"
-            app:backgroundTint="@color/purple_700" />
+            app:backgroundTint="@color/purple_500" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

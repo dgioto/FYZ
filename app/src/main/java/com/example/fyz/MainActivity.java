@@ -14,22 +14,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-//        //создание объект слушателя
-//        AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> listView, View itemView, int position, long id) {
-//                if (position == 0){
-//                    Intent intent = new Intent(
-//                            MainActivity.this,
-//                            CategoriesActivity.class);
-//                    startActivity(intent);
-//                }
-//             }
-//        };
-//        //Добавление слушателя к списковому представлению
-//        ListView listView = (ListView) findViewById(R.id.list_options);
-//        listView.setOnItemClickListener(itemClickListener);
     }
 
     public void onClickCategories(View view){
@@ -42,25 +26,25 @@ public class MainActivity extends AppCompatActivity {
     public void onClickPromotions(View view){
         Intent intent = new Intent(
                 MainActivity.this,
-                CategoriesActivity.class);
+                Promotions.class);
         startActivity(intent);
     }
     public void onClickShippingPayment(View view){
         Intent intent = new Intent(
                 MainActivity.this,
-                CategoriesActivity.class);
+                ShippingPayment.class);
         startActivity(intent);
     }
-    public void onClickСontacts(View view){
+    public void onClickContacts(View view){
         Intent intent = new Intent(
                 MainActivity.this,
-                CategoriesActivity.class);
+                Contacts.class);
         startActivity(intent);
     }
     public void onClickAboutUs(View view){
         Intent intent = new Intent(
                 MainActivity.this,
-                CategoriesActivity.class);
+                AboutUs.class);
         startActivity(intent);
     }
 }
