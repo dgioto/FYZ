@@ -2,6 +2,13 @@
     <string name="app_name">FYZ</string>
     <string name="logo">Forever Your Zealot</string>
 
+    <string name="button">Категории</string>
+    <string name="button2">Акции</string>
+    <string name="button3">Доставка и оплата</string>
+    <string name="button4">Контакты</string>
+    <string name="button5">О нас</string>
+
+
     <string-array name="options">
         <item>Категории</item>
         <item>Акции</item>
