@@ -7,23 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
 
-public class ThirdActivity extends AppCompatActivity {
+public class ChemistryActivity extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_third);
+        setContentView(R.layout.activity_chemistry);
 
         //добавление спискового представления с помощью адаптера массивов
-        ArrayAdapter<Thing> listAdapter = new ArrayAdapter<>(
+        ArrayAdapter<Chemistry> listAdapter = new ArrayAdapter<>(
                 this,
                 android.R.layout.simple_list_item_1,
-                Thing.drinks
+                Chemistry.chemistry
         );
         ListView listChemistry = (ListView) findViewById(R.id.list_chemistry);
         listChemistry.setAdapter(listAdapter);
@@ -35,9 +33,9 @@ public class ThirdActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> listChemistry,
                                     View itemView, int position, long id) {
                 //Передача напитка, вызванного пользователем, DrinkActivity
-                Intent intent = new Intent(ThirdActivity.this,
-                        FourthActivity.class);
-                intent.putExtra(FourthActivity.EXTRA_DRINKID, (int) id);
+                Intent intent = new Intent(ChemistryActivity.this,
+                        CardProductActivity.class);
+                intent.putExtra(CardProductActivity.EXTRA_CHEMID, (int) id);
                 startActivity(intent);
             }
         };

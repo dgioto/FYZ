@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
                 if (position == 0){
                     Intent intent = new Intent(
                             MainActivity.this,
-                            SecondActivity.class);
+                            CategoriesActivity.class);
                     startActivity(intent);
                 }
                 else if (position == 1){

@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FYZ">
-        <activity android:name=".FourthActivity"></activity>
-        <activity android:name=".ThirdActivity" />
-        <activity android:name=".SecondActivity" />
+        <activity android:name=".CardProductActivity"></activity>
+        <activity android:name=".ChemistryActivity" />
+        <activity android:name=".CategoriesActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

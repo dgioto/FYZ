@@ -8,20 +8,20 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-public class SecondActivity extends AppCompatActivity {
+public class CategoriesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_categories);
 
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> listView, View itemView, int position, long id) {
                 if (position == 0){
                     Intent intent = new Intent(
-                            SecondActivity.this,
-                            ThirdActivity.class);
+                            CategoriesActivity.this,
+                            ChemistryActivity.class);
                     startActivity(intent);
                 }
                 else if (position == 1){
