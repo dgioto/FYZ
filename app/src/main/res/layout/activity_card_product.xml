@@ -54,6 +54,7 @@
         android:layout_marginBottom="16dp"
         android:clickable="true"
         android:onClick="onClickCall"
+        app:backgroundTint="@color/purple_500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@android:drawable/sym_action_call" />

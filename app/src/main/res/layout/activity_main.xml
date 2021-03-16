@@ -17,63 +17,59 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_2" />
 
-    <ListView
-        android:id="@+id/list_options"
-        style="@style/Widget.AppCompat.ListView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:entries="@array/options"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
-
-    </ListView>
-
     <LinearLayout
-        android:layout_width="393dp"
-        android:layout_height="271dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp"
+        android:padding="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/list_options">
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onClickCategories"
             android:padding="16dp"
-            android:text="@string/button" />
+            android:text="@string/button"
+            app:backgroundTint="@color/purple_200" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onClickPromotions"
             android:padding="16dp"
-            android:text="@string/button2" />
+            android:text="@string/button2"
+            app:backgroundTint="@color/purple_700" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onClickShippingPayment"
             android:padding="16dp"
-            android:text="@string/button3" />
+            android:text="@string/button3"
+            app:backgroundTint="@color/purple_700" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onClickСontacts"
             android:padding="16dp"
-            android:text="@string/button4" />
+            android:text="@string/button4"
+            app:backgroundTint="@color/purple_700" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/button5" />
+            android:onClick="onClickAboutUs"
+            android:text="@string/button5"
+            app:backgroundTint="@color/purple_700" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
