@@ -25,22 +25,40 @@ public class CategoriesActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
                 else if (position == 1){
-
+                    Intent intent = new Intent(
+                            CategoriesActivity.this,
+                            ChemistryActivity.class);
+                    startActivity(intent);
                 }
                 else if (position == 2){
-
+                    Intent intent = new Intent(
+                            CategoriesActivity.this,
+                            ChemistryActivity.class);
+                    startActivity(intent);
                 }
                 else if (position == 3){
-
+                    Intent intent = new Intent(
+                            CategoriesActivity.this,
+                            ChemistryActivity.class);
+                    startActivity(intent);
                 }
                 else if (position == 4){
-
+                    Intent intent = new Intent(
+                            CategoriesActivity.this,
+                            ChemistryActivity.class);
+                    startActivity(intent);
                 }
                 else if (position == 5){
-
+                    Intent intent = new Intent(
+                            CategoriesActivity.this,
+                            ChemistryActivity.class);
+                    startActivity(intent);
                 }
                 else if (position == 6){
-
+                    Intent intent = new Intent(
+                            CategoriesActivity.this,
+                            ChemistryActivity.class);
+                    startActivity(intent);
                 }
             }
         };

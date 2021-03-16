@@ -2,6 +2,8 @@ package com.example.fyz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -34,4 +36,12 @@ public class CardProductActivity extends AppCompatActivity {
         photo.setImageResource(chem.getImageResourceId());
         photo.setContentDescription(chem.getName());
     }
+
+    public  void onClickCall(){
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:0508116393"));
+        startActivity(intent);
+    }
+
+
 }
