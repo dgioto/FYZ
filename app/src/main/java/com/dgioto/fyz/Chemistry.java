@@ -1,4 +1,4 @@
-package com.example.fyz;
+package com.dgioto.fyz;
 
 public class Chemistry {
     private String name;

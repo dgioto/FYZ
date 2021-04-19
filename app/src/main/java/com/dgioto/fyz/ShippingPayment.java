@@ -1,4 +1,4 @@
-package com.example.fyz;
+package com.dgioto.fyz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
