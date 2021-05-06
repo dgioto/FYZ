@@ -10,16 +10,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FYZ">
-        <activity android:name=".Contacts" />
-        <activity android:name=".ShippingPayment" />
-        <activity android:name=".Promotions" />
-        <activity android:name=".AboutUs" />
-        <activity android:name=".CardProductActivity" />
-        <activity android:name=".ChemistryActivity" />
-        <activity android:name=".CategoriesActivity" />
+
+        <activity android:name=".Contacts"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ShippingPayment"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Promotions"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".AboutUs"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".CardProductActivity"
+            android:parentActivityName=".ChemistryActivity"/>
+        <activity android:name=".ChemistryActivity"
+            android:parentActivityName=".CategoriesActivity"/>
+        <activity android:name=".CategoriesActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".MainActivity"
-            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar">
+            android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

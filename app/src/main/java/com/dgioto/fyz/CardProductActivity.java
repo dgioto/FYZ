@@ -1,5 +1,6 @@
 package com.dgioto.fyz;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -19,6 +20,9 @@ public class CardProductActivity extends AppCompatActivity {
         setContentView(R.layout.activity_card_product);
 
 
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         //получить напиток из данный интента
         int chemId = (Integer) getIntent().getExtras().get(EXTRA_CHEMID);

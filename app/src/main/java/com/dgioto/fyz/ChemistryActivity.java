@@ -1,5 +1,6 @@
 package com.dgioto.fyz;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toolbar;
 
 public class ChemistryActivity extends AppCompatActivity {
 
@@ -16,6 +18,9 @@ public class ChemistryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chemistry);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         //добавление спискового представления с помощью адаптера массивов
         ArrayAdapter<Chemistry> listAdapter = new ArrayAdapter<>(
